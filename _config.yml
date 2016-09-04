@@ -1,0 +1,27 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Generic Landing Page
+email: you@example.org
+description: > # this means to ignore newlines until "baseurl:"
+  Change this site description in _config.yml
+  Or don't.  I'm a document, not a cop.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://example.org" # the base hostname & protocol for your site
+twitter_username: yourtwittername
+github_username:  yourgithubname
+
+# Build settings
+markdown: kramdown
+
+collections:
+  newsletters:
+    output: true
+    permalink: /newsletter/archives/:year-:month-:day
+
+permalink: /posts/:title
